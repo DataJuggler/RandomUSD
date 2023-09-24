@@ -1178,8 +1178,6 @@ namespace RandomUSD
         }
         #endregion
 
-        
-
         #region UIVisibility()
         /// <summary>
         /// UI Visibility
