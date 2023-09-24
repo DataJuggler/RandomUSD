@@ -653,6 +653,45 @@ namespace RandomUSD
         }
         #endregion
 
+        #region TabSelected(TabButton selectedButton)
+        /// <summary>
+        /// method returns the Selected
+        /// </summary>
+        public void TabSelected(TabButton selectedButton)
+        {
+            // If the selectedButton object exists
+            if (NullHelper.Exists(selectedButton))
+            {
+                switch (selectedButton.ButtonNumber)
+                {
+                    case 1:
+
+                        // setup for Scenes
+                        UIVisibility(ScreenTypeEnum.Scenes);
+
+                        // required
+                        break;
+
+                    case 2:
+
+                        // setup for Props
+                        UIVisibility(ScreenTypeEnum.Props);
+
+                        // required
+                        break;
+
+                    case 3:
+
+                        // setup for Materials
+                        UIVisibility(ScreenTypeEnum.Materials);
+
+                        // required
+                        break;
+                }
+            }
+        }
+        #endregion
+
         #endregion
 
         #region Methods
@@ -1139,44 +1178,7 @@ namespace RandomUSD
         }
         #endregion
 
-        #region TabSelected(TabButton selectedButton)
-        /// <summary>
-        /// method returns the Selected
-        /// </summary>
-        public void TabSelected(TabButton selectedButton)
-        {
-            // If the selectedButton object exists
-            if (NullHelper.Exists(selectedButton))
-            {
-                switch (selectedButton.ButtonNumber)
-                {
-                    case 1:
-
-                        // setup for Scenes
-                        UIVisibility(ScreenTypeEnum.Scenes);
-
-                        // required
-                        break;
-
-                    case 2:
-
-                        // setup for Props
-                        UIVisibility(ScreenTypeEnum.Props);
-
-                        // required
-                        break;
-
-                    case 3:
-
-                        // setup for Materials
-                        UIVisibility(ScreenTypeEnum.Materials);
-
-                        // required
-                        break;
-                }
-            }
-        }
-        #endregion
+        
 
         #region UIVisibility()
         /// <summary>
